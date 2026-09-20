@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>PortafolioWeb</title>
+
+    <!-- //  INVOCAMOS AL MIN.CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<main class="flex-grow-1">
+    <!-- todo el contenido de tu página -->
+
+<!-- Navbar-->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Mi Portafolio Web</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="projects.html">Proyectos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modal-contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- DATOS DE CONTACTO NAVBAR MODAL -->
+<div class="modal fade" id="modal-contacto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Contacto</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <p>Datos de contacto</p>
+       <ul class="list-group">
+          <li class="list-group-item">Correo: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nicolasp012345678@gmail.com&su=Contacto&body=Hola, vi tu portafolio y quisiera contactarte." target="_blank" rel="noopener noreferrer" class="text-dark">Nicolas Steven</a></li>
+          <li class="list-group-item">Github: <a href="https://github.com/nicolastevv" target="_blank" rel="noopener noreferrer" class="text-dark">nicolastevv</a></li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <a type="button" class="btn btn-primary" href="//mail.google.com/mail/?view=cm&fs=1&to=nicolasp012345678@gmail.com&su=Contacto&body=Hola, vi tu portafolio y quisiera contactarte." target="_blank" rel="noopener noreferrer">Contactar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--fin de navbar-->
+<section>
+  <div class="row">
+    <div class="col-md-12">
+    <h1>Bienvenido a mi Portafolio</h1>
+    <label for="">Soy Nicolas Steven, desarrollador web, estudiante de la I.U Pascual Bravo apasionado por la tecnologia</label>
+    <br>
+    <h2>Sobre Mi</h2>
+    <label for="">Soy un apasionado por la teconologia que busca constantemente crear cosas y aprender nuevas tecnologias.</label>
+    <br>
+    <h3>Habilidades</h3>
+    <label for="">Lista de habilidades que domino y/o quisiera dominar</label>
+    <br>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="seccion-h">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><img src="./images/html5-brands-solid-full.svg" alt="" width="20" height="20"> HTML</li>
+    <li class="list-group-item"><img src="./images/css-brands-solid-full.svg" alt="" width="20" height="20"> CSS</li>
+    <li class="list-group-item"><img src="./images/js-brands-solid-full.svg" alt="" height="20" width="20"> JavaScript</li>
+    <li class="list-group-item"><img src="./images/hashtag-solid-full.svg" alt="" width="20" height="20"> C#</li>
+  </ul>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+</main>
+
+
+<footer class="bg-dark text-white text-center py-2">
+  <div class="pie-pagina">
+
+    <a type="button" href="https://github.com/nicolastevv" target="_blank">Github</a>
+  </div>
+</footer>
+ <!-- // INVOCAMOS AL SCRIPT BUNDLE MIN.JS // -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
