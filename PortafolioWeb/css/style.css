@@ -1,0 +1,191 @@
+/* ==========================================
+   RESET Y BASE
+   ========================================== */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Sora', sans-serif;
+    background-color: #0a0a0a;
+    color: #E5E7EB;
+    min-height: 100dvh;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================================
+   NAVBAR
+   ========================================== */
+.navbar {
+    background-color: rgba(10, 10, 10, 0.6) !important;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF !important;
+    font-size: 1.1rem;
+    letter-spacing: -0.5px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #A8E6CF;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 0 0 10px rgba(168, 230, 207, 0.8);
+    flex-shrink: 0;
+}
+
+.navbar .nav-link {
+    color: rgba(255, 255, 255, 0.7) !important;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: #A8E6CF !important;
+}
+
+.navbar-toggler {
+    border-color: rgba(168, 230, 207, 0.4);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgba(168, 230, 207, 0.25);
+}
+
+/* ==========================================
+   SECCIONES — Etiquetas comunes
+   ========================================== */
+.section-tag {
+    display: block;
+    color: #A8E6CF;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+    opacity: 0.85;
+}
+
+.section-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #FFFFFF;
+    letter-spacing: -1px;
+    margin: 0;
+    line-height: 1.1;
+}
+
+h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    letter-spacing: -1px;
+}
+
+h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+/* ==========================================
+   BOTONES
+   ========================================== */
+.btn-neon {
+    background-color: #A8E6CF;
+    color: #0a0a0a;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    padding: 0.75rem 1.75rem;
+    border-radius: 999px;
+    border: 1px solid #A8E6CF;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn-neon:hover {
+    background-color: transparent;
+    color: #A8E6CF;
+    box-shadow: 0 0 20px rgba(168, 230, 207, 0.4);
+}
+
+.btn-neon-outline {
+    background-color: transparent;
+    color: #A8E6CF;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    padding: 0.6rem 1.5rem;
+    border-radius: 999px;
+    border: 1px solid #A8E6CF;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-neon-outline:hover {
+    background-color: #A8E6CF;
+    color: #0a0a0a;
+}
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+.pie-pagina {
+    color: #C4CAD0;
+    background-color: #000;
+    text-align: center;
+    border-top: 1px solid rgba(168, 230, 207, 0.15);
+    padding: 2.5rem 1rem;
+    font-family: 'Sora', sans-serif;
+    font-size: 0.95rem;
+}
+
+.pie-pagina a {
+    color: #A8E6CF;
+    text-decoration: none;
+    transition: text-shadow 0.2s ease;
+}
+
+.pie-pagina a:hover {
+    text-shadow: 0 0 10px rgba(168, 230, 207, 0.6);
+}
+
+.pie-pagina p {
+    margin: 0.5rem 0 0;
+    color: #C4CAD0;
+    line-height: 1.6;
+}
+
+/* ==========================================
+   ACCESIBILIDAD
+   ========================================== */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+    html {
+        scroll-behavior: auto;
+    }
+}

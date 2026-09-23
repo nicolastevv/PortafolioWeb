@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Nicolas Steven | Portafolio</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- Lenis (scroll suave) -->
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.26/dist/lenis.css">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+      body { overflow-x: hidden; }
+    </style>
+</head>
+
+<body class="d-flex flex-column m-0 p-0">
+
+<div class="container-fluid d-flex flex-column p-0" style="min-height: 100dvh;">
+
+  <main class="flex-grow-1">
+
+    <!-- ==========================================
+         NAVBAR
+         ========================================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid px-4">
+        <a class="navbar-brand" href="#">Mi Portafolio Web</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre-mi">Sobre Mi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html">Proyectos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- fin navbar -->
+
+
+    <!-- ==========================================
+         HERO — Nombre + Logo GitHub
+         ========================================== -->
+    <section id="inicio" class="img-bg">
+      <div class="container hero-content">
+        <div class="row">
+          <div class="col-12 text-center">
+
+            <h1 class="h1-nicolas">Nicolas Steven</h1>
+
+            <p class="hero-subtitle">Desarrollador de Software</p>
+
+            <a href="https://github.com/nicolastevv" target="_blank" rel="noopener noreferrer" class="logo-github" aria-label="GitHub de Nicolas Steven">
+              <img src="./images/logotipo-de-github.png" alt="GitHub">
+            </a>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- fin hero -->
+
+
+    <!-- ==========================================
+         SOBRE MÍ
+         ========================================== -->
+    <section id="sobre-mi" class="sobre-mi py-5">
+      <div class="container">
+        <div class="row align-items-center g-5">
+
+          <!-- Columna izquierda: foto -->
+          <!-- <div class="col-lg-5 col-md-12 text-center">
+            <div class="sobre-mi-foto"> -->
+              <!-- Reemplaza esta ruta por tu foto real -->
+              <!-- <img src="./images/tu-foto.jpg" alt="Foto de Nicolas Steven" class="img-fluid">
+            </div>
+          </div> -->
+
+          <!-- Columna derecha: texto -->
+          <div class="col-lg-7 col-md-12">
+            <span class="section-tag">— Sobre mí —</span>
+            <h2 class="section-title mb-4">¿Quién soy?</h2>
+
+            <p class="sobre-mi-texto mb-3">
+              Soy <strong>Nicolas Steven</strong>, estudiante de Desarrollo de Software en la
+              Institución Universitaria Pascual Bravo. Actualmente curso cuarto semestre
+              y me apasiona la tecnología, el desarrollo web y la creación de soluciones
+              que resuelvan problemas reales.
+            </p>
+
+            <p class="sobre-mi-texto mb-4">
+              Me caracterizo por ser una persona curiosa, autodidacta y con ganas constantes
+              de aprender. Disfruto trabajar en proyectos donde pueda combinar lógica,
+              diseño y creatividad.
+            </p>
+
+            <ul class="sobre-mi-datos">
+              <li><span>📍 Ubicación:</span> Medellín, Colombia</li>
+              <li><span>🎓 Formación:</span> Desarrollo de Software — I.U. Pascual Bravo</li>
+              <li><span>💼 Enfoque:</span> Desarrollo Web &amp; Aplicaciones</li>
+              <li><span>🚀 Intereses:</span> Frontend, Backend, Arduino</li>
+            </ul>
+
+            <div class="d-flex gap-3 mt-4 flex-wrap">
+              <a href="projects.html" class="btn-neon">Ver proyectos</a>
+              <a href="https://github.com/nicolastevv" target="_blank" rel="noopener noreferrer" class="btn-outline-neon">GitHub</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- fin sobre mí -->
+
+
+    <!-- ==========================================
+         HABILIDADES
+         ========================================== -->
+    <section id="habilidades" class="habilidades-seccion py-5">
+      <div class="container">
+
+        <div class="text-center mb-5">
+          <span class="section-tag">— Parte Técnica —</span>
+          <h2 class="section-title">Habilidades</h2>
+        </div>
+
+        <div class="row g-4">
+
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card rounded-4 h-100">
+              <div class="card-body">
+                <h5 class="card-title">Desarrollo Web</h5>
+                <ul class="lista-habilidades">
+                  <li><img src="./images/html5-brands-solid-full.svg" alt="" width="20" height="20"> HTML</li>
+                  <li><img src="./images/css-brands-solid-full.svg" alt="" width="20" height="20"> CSS</li>
+                  <li><img src="./images/bootstrap-brands-solid-full.svg" alt="" width="20" height="20"> Bootstrap</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="card rounded-4 h-100">
+              <div class="card-body">
+                <h5 class="card-title">Desarrollo de Aplicaciones</h5>
+                <ul class="lista-habilidades">
+                  <li><img src="./images/java-brands-solid-full.svg" alt="" width="20" height="20"> JAVA</li>
+                  <li><img src="./images/hashtag-solid-full.svg" alt="" width="20" height="20"> C#</li>
+                  <li><img src="./images/microsoft-brands-solid-full.svg" alt="" width="20" height="20"> Windows Forms</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="card rounded-4 h-100">
+              <div class="card-body">
+                <h5 class="card-title">Otras Habilidades</h5>
+                <ul class="lista-habilidades">
+                  <li>Gestión de datos</li>
+                  <li>Circuitos (Arduino)</li>
+                  <li>Bases de Datos</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- fin habilidades -->
+
+
+    <!-- ==========================================
+         MODAL CONTACTO (opcional — descomentar si lo usas)
+         ========================================== -->
+    <!--
+    <div class="modal fade" id="modal-contacto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">Contacto</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Datos de contacto</p>
+            <ul class="list-group">
+              <li class="list-group-item">Correo: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nicolasp012345678@gmail.com&su=Contacto&body=Hola, vi tu portafolio y quisiera contactarte." target="_blank" rel="noopener noreferrer" class="text-dark">Nicolas Steven</a></li>
+              <li class="list-group-item">Github: <a href="https://github.com/nicolastevv" target="_blank" rel="noopener noreferrer" class="text-dark">nicolastevv</a></li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <a type="button" class="btn btn-primary" href="//mail.google.com/mail/?view=cm&fs=1&to=nicolasp012345678@gmail.com&su=Contacto&body=Hola, vi tu portafolio y quisiera contactarte." target="_blank" rel="noopener noreferrer">Contactar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    -->
+
+  </main>
+</div>
+
+
+<!-- ==========================================
+     FOOTER
+     ========================================== -->
+<footer id="contacto" class="pie-pagina">
+  <div>
+    <a class="fw-bold" href="https://github.com/nicolastevv" target="_blank" rel="noopener noreferrer">Github</a>
+    <br>
+    <p class="fw-bold">
+      nicolas.palacios963@pascualbravo.edu.co <br>
+      &copy; Nicolas Steven. Todos los derechos reservados.
+    </p>
+  </div>
+</footer>
+
+
+<!-- Scripts -->
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/lenis@1.3.26/dist/lenis.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Proyectos | Nicolas Steven</title>
+    <meta name="description" content="Proyectos de desarrollo web y software de Nicolas Steven">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Estilos propios -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/projects.css">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column m-0 p-0">
+
+<div class="container-fluid d-flex flex-column p-0" style="min-height: 100dvh;">
+
+  <main class="flex-grow-1">
+
+    <!-- ==========================================
+         NAVBAR
+         ========================================== -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid px-4">
+        <a class="navbar-brand" href="index.html">Mi Portafolio Web</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="projects.html">Proyectos</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#sobre-mi">Sobre Mi</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- fin navbar -->
+
+
+    <!-- ==========================================
+         HEADER DE PROYECTOS
+         ========================================== -->
+    <section class="page-header">
+      <div class="container text-center">
+        <span class="section-tag">— Portafolio —</span>
+        <h1 class="section-title">Mis Proyectos</h1>
+        <p class="page-header-text">
+          Haz clic en <strong>"Ver más"</strong> en cada tarjeta para ver el video del proyecto.
+        </p>
+      </div>
+    </section>
+    <!-- fin header -->
+
+
+    <!-- ==========================================
+         GRID DE PROYECTOS
+         ========================================== -->
+    <section class="proyectos-seccion">
+      <div class="container">
+        <div class="row g-4">
+
+          <!-- PROYECTO 1 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card proyecto-card h-100">
+              <div class="proyecto-thumb">
+                <img src="./images/AdivinaElNumero.PNG" alt="Captura del proyecto Adivina el Número" class="card-img-top">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Adivina el Número</h5>
+                <p class="card-text">
+                  Juego de consola donde el usuario debe adivinar un número del 1 al 100.
+                  Al final, el programa indica en cuántos intentos lo lograste.
+                </p>
+                <div class="proyecto-tags">
+                  <span>C#</span>
+                  <span>.NET</span>
+                  <span>Consola</span>
+                </div>
+                <button type="button" class="btn-neon mt-auto" data-bs-toggle="modal" data-bs-target="#modalProyecto1">
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- FIN PROYECTO 1 -->
+
+          <!-- PROYECTO 2 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card proyecto-card h-100">
+              <div class="proyecto-thumb">
+                <img src="./images/parqueadero.png" alt="Captura del proyecto Parqueadero Pascualino" class="card-img-top">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Parqueadero Pascualino</h5>
+                <p class="card-text">
+                  Aplicación de consola para la gestión completa del servicio de un parqueadero:
+                  entrada, salida, cobro y registro de vehículos.
+                </p>
+                <div class="proyecto-tags">
+                  <span>C#</span>
+                  <span>POO</span>
+                  <span>Consola</span>
+                </div>
+                <button type="button" class="btn-neon mt-auto" data-bs-toggle="modal" data-bs-target="#modalProyecto2">
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- FIN PROYECTO 2 -->
+
+          <!-- PROYECTO 3 -->
+          <div class="col-md-6 col-lg-4">
+            <div class="card proyecto-card h-100">
+              <div class="proyecto-thumb">
+                <img src="./images/capturaMDI.PNG" alt="Captura del proyecto Formulario MDI" class="card-img-top">
+              </div>
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Formulario MDI</h5>
+                <p class="card-text">
+                  Aplicación de Windows Forms con interfaz MDI para gestión de clientes,
+                  con múltiples ventanas internas y navegación entre módulos.
+                </p>
+                <div class="proyecto-tags">
+                  <span>C#</span>
+                  <span>Windows Forms</span>
+                  <span>MDI</span>
+                </div>
+                <button type="button" class="btn-neon mt-auto" data-bs-toggle="modal" data-bs-target="#modalProyecto3">
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- FIN PROYECTO 3 -->
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+
+<!-- ==========================================
+     MODALES DE PROYECTOS (fuera del grid)
+     ========================================== -->
+
+<!-- Modal Proyecto 1 -->
+<div class="modal fade" id="modalProyecto1" tabindex="-1" aria-labelledby="tituloProyecto1" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tituloProyecto1">Adivina el Número</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/bV--jjNwEeE" title="Demo Adivina el Número" allowfullscreen></iframe>
+        </div>
+        <p class="mt-3 mb-0">
+          Juego de consola donde el usuario debe adivinar un número del 1 al 100.
+          El programa valida cada intento y al final indica cuántos fueron necesarios.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-neon-outline" data-bs-dismiss="modal">Cerrar</button>
+        <a href="https://github.com/nicolastevv/Adivina-el-Numero" target="_blank" rel="noopener noreferrer" class="btn-neon">
+          Ir al repositorio
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Proyecto 2 -->
+<div class="modal fade" id="modalProyecto2" tabindex="-1" aria-labelledby="tituloProyecto2" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tituloProyecto2">Parqueadero Pascualino</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/TAuUytSQvyQ" title="Demo Parqueadero Pascualino" allowfullscreen></iframe>
+        </div>
+        <p class="mt-3 mb-0">
+          Aplicación de consola para la gestión del servicio de un parqueadero:
+          registro de entrada y salida, cálculo de tarifas y control de vehículos.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-neon-outline" data-bs-dismiss="modal">Cerrar</button>
+        <a href="https://github.com/nicolastevv/Parqueadero-Pascualino" target="_blank" rel="noopener noreferrer" class="btn-neon">
+          Ir al repositorio
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Proyecto 3 -->
+<div class="modal fade" id="modalProyecto3" tabindex="-1" aria-labelledby="tituloProyecto3" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tituloProyecto3">Formulario MDI</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/iuy8mLc2pug" title="Demo Formulario MDI" allowfullscreen></iframe>
+        </div>
+        <p class="mt-3 mb-0">
+          Aplicación de Windows Forms con interfaz MDI (Multiple Document Interface)
+          para la gestión de clientes, con múltiples formularios hijos y navegación interna.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn-neon-outline" data-bs-dismiss="modal">Cerrar</button>
+        <a href="https://github.com/nicolastevv/Formulario-MDI" target="_blank" rel="noopener noreferrer" class="btn-neon">
+          Ir al repositorio
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ==========================================
+     FOOTER
+     ========================================== -->
+<footer id="contacto" class="pie-pagina">
+  <div>
+    <a class="fw-bold" href="https://github.com/nicolastevv" target="_blank" rel="noopener noreferrer">Github</a>
+    <br>
+    <p class="fw-bold">
+      nicolas.palacios963@pascualbravo.edu.co <br>
+      &copy; Nicolas Steven. Todos los derechos reservados.
+    </p>
+  </div>
+</footer>
+
+
+<!-- Scripts -->
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>

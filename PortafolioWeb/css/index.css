@@ -1,0 +1,317 @@
+/* ==========================================
+   HERO
+   ========================================== */
+.img-bg {
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #0a0a0a;
+    background-image:
+        linear-gradient(rgba(168, 230, 207, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(168, 230, 207, 0.03) 1px, transparent 1px),
+        radial-gradient(ellipse at top, rgba(168, 230, 207, 0.08), transparent 60%);
+    background-size: 40px 40px, 40px 40px, 100% 100%;
+}
+
+.hero-content {
+    text-align: center;
+    width: 100%;
+}
+
+.h1-nicolas {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    color: #A8E6CF;
+    text-align: center;
+    letter-spacing: -2px;
+    line-height: 1.05;
+    margin: 0;
+    text-shadow:
+        0 0 10px rgba(168, 230, 207, 0.55),
+        0 0 30px rgba(168, 230, 207, 0.28),
+        0 0 60px rgba(168, 230, 207, 0.12);
+}
+
+.hero-subtitle {
+    font-family: 'Sora', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #E5E7EB;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    opacity: 0.75;
+}
+
+/* Logo GitHub */
+.logo-github {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    margin-top: 2.5rem;
+    transition: transform 0.3s ease;
+}
+
+.logo-github:hover {
+    transform: scale(1.15);
+}
+
+.logo-github img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter:
+        brightness(0) saturate(100%)
+        invert(88%) sepia(18%) saturate(568%)
+        hue-rotate(100deg) brightness(103%) contrast(93%)
+        drop-shadow(0 0 8px rgba(168, 230, 207, 0.6));
+}
+
+
+/* ==========================================
+   SOBRE MÍ
+   ========================================== */
+.sobre-mi {
+    padding: 6rem 0;
+    background-color: #0a0a0a;
+}
+
+.sobre-mi-foto {
+    position: relative;
+    display: inline-block;
+    max-width: 340px;
+    width: 100%;
+}
+
+.sobre-mi-foto img {
+    width: 100%;
+    border-radius: 20px;
+    filter: grayscale(20%) contrast(1.05);
+    border: 1px solid rgba(168, 230, 207, 0.25);
+    box-shadow:
+        0 0 30px rgba(168, 230, 207, 0.12),
+        0 20px 40px rgba(0, 0, 0, 0.6);
+    transition: all 0.4s ease;
+}
+
+.sobre-mi-foto img:hover {
+    filter: grayscale(0%) contrast(1.05);
+    box-shadow:
+        0 0 50px rgba(168, 230, 207, 0.25),
+        0 20px 40px rgba(0, 0, 0, 0.6);
+    transform: translateY(-4px);
+}
+
+.sobre-mi-texto {
+    color: #E5E7EB;
+    font-family: 'Sora', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    max-width: 60ch;
+}
+
+.sobre-mi-texto strong {
+    color: #A8E6CF;
+    font-weight: 600;
+}
+
+.sobre-mi-datos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sobre-mi-datos li {
+    color: #E5E7EB;
+    font-family: 'Sora', sans-serif;
+    font-size: 0.95rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.sobre-mi-datos li span {
+    color: #A8E6CF;
+    font-weight: 600;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* ==========================================
+   HABILIDADES
+   ========================================== */
+.habilidades-seccion {
+    padding: 5rem 0;
+    background-color: #0a0a0a;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 1.75rem 1.5rem;
+    color: #E5E7EB;
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #A8E6CF, transparent);
+    opacity: 0.4;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover {
+    border-color: rgba(168, 230, 207, 0.35);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 40px rgba(168, 230, 207, 0.12);
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 0;
+}
+
+.card-title {
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #FFFFFF;
+    margin-bottom: 1.5rem;
+}
+
+.lista-habilidades {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-habilidades li {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-family: 'Sora', sans-serif;
+    font-size: 0.95rem;
+    color: #E5E7EB;
+}
+
+.lista-habilidades li:last-child {
+    border-bottom: none;
+}
+
+.lista-habilidades img {
+    filter: brightness(0) saturate(100%)
+            invert(88%) sepia(18%) saturate(568%)
+            hue-rotate(100deg) brightness(103%) contrast(93%);
+    flex-shrink: 0;
+}
+
+
+
+
+
+
+/* ==========================================
+   BOTÓN GITHUB CON ÍCONO
+   ========================================== */
+.btn-outline-neon {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: transparent;
+    color: #A8E6CF;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    padding: 0.75rem 1.75rem;
+    border-radius: 999px;
+    border: 1px solid #A8E6CF;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-outline-neon:hover {
+    background-color: #A8E6CF;
+    color: #0a0a0a;
+    box-shadow: 0 0 20px rgba(168, 230, 207, 0.4);
+}
+
+.btn-outline-neon svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.btn-outline-neon:hover svg {
+    transform: scale(1.1);
+}
+
+
+
+
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+@media (max-width: 991px) {
+    .sobre-mi {
+        padding: 4rem 0;
+    }
+    .sobre-mi-foto {
+        max-width: 260px;
+        margin-bottom: 2rem;
+    }
+    .img-bg {
+        padding-top: 90px;
+    }
+}
+
+@media (max-width: 576px) {
+    .h1-nicolas {
+        letter-spacing: -1px;
+    }
+    .hero-subtitle {
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+    }
+    .sobre-mi {
+        padding: 3rem 0;
+    }
+    .btn-neon,
+    .btn-neon-outline {
+        padding: 0.65rem 1.4rem;
+        font-size: 0.9rem;
+    }
+}
